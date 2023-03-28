@@ -1,0 +1,14 @@
+#LoadContainer{
+  width: 50vh;
+  height: 50vh;
+  position: relative;
+}
+#logo {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0;
+}
+#logo {
+  z-index: 10;
+}
