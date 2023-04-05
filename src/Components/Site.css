@@ -1,0 +1,8 @@
+#site{
+    animation: fadeIn 3s;
+    width: 95%;
+}
+
+#theContent{
+    animation: backInUp 0.5;
+}

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import Logo from './assets/LogoJeroVacio.svg'
+import Site from './Components/Site';
 import './Loading.css'
 
 function Loading() {
@@ -22,15 +23,12 @@ function Loading() {
     }, []);
   
     return (
-      <div>
+      <>
         {showSite ? (
-          /* <div>
-            <h1>Welcome to the landing page!</h1>
-          </div> */
-        <div className='flex items-center justify-center h-screen w-screen'>
+        /* <div className='flex items-center justify-center h-screen w-screen'>
             <div id='LoadContainer'>
                 <img id="logo" src={Logo} alt="Logo"/>
-                <svg id="load" width="100%" height="100%" className='sm:py-3 py-20 px-3'>
+                <svg id="load" width="100%" height="100%" className=''>
                     <rect
                     x="0"
                     y="0"
@@ -40,12 +38,15 @@ function Loading() {
                     />
                 </svg>
             </div>
-        </div>
+        </div>  */
+
+        <Site/>
+
         ) : (
           <div id='container' className='flex items-center justify-center h-screen w-screen'>
             <div id='LoadContainer'>
-              <img id="logo" src={Logo} alt="Logo"/>
-              <svg id="load" width="100%" height="100%" className='sm:py-3 py-20 px-3'>
+              <img id="load_logo" src={Logo} alt="Logo"/>
+              <svg id="load" width="100%" height="100%" className=''>
                 <rect
                   x="0"
                   y="0"
@@ -66,7 +67,7 @@ function Loading() {
             </div>
           </div>
         )}
-      </div>
+      </>
     );
 }
 export default Loading
