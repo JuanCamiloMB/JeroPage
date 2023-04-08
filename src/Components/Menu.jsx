@@ -1,46 +1,62 @@
-import { useState } from "react"
-import Menu_img from '../assets/menu.svg'
-import './Menu.css'
-import Close_img from '../assets/close.svg'
+import { useState } from "react";
+import Menu_img from "../assets/menu.svg";
+import "./Menu.css";
+import Close_img from "../assets/close.svg";
+import { motion, AnimatePresence } from "framer-motion";
 
-function Menu(){
-    const [desplegado, setDesplegado] = useState(false)
-    function menuClick(){
-        if(desplegado === false){
-            setDesplegado(true)
-            document.body.style.overflow = "hidden";
-        }else{
-            document.getElementById('menu_options').style.animation="backOutUp 0.5s";
-            document.getElementById('close_btn').style.animation="backOutRight 0.5s";
-            setTimeout(()=>{setDesplegado(false)}, 500)
-            
-            document.body.style.overflow = "visible";
-        }
-    }
+function Menu() {
+  const [desplegado, setDesplegado] = useState(false);
 
-    return(
-        <>
-            {desplegado ? (
-                <nav id="menu_open">
-                    <div id='close_btn' onClick={menuClick}>
-                        <img id='close_img' src={Close_img}/>
-                    </div>
-                    <div id="menu_options">
-                        <a href="#">Primera seccion</a>
-                        <a href="#">Segunda seccion</a>
-                        <a href="#">Tercera seccion</a>
-                        <a href="#">Cuarta seccion</a>
-                        <a href="#">Quinta seccion</a>
-                        <a href="#">Sexta seccion</a>
-                    </div>
-                </nav>
-            ):(
-                <nav id="menu_close">
-                    <img id='menu_img' src={Menu_img} onClick={menuClick}/>
-                </nav>
-            )}
-        </>
-    )
+  return (
+    <>
+    <AnimatePresence mode="wait">
+      {desplegado && (
+        <nav id="menu_open">
+          <motion.img
+            id="close_img"
+            key={"1"}
+            src={Close_img}
+            onClick={() => setDesplegado(false)}
+            initial={{ x: 500 }}
+            animate={{ x: 0 }}
+            exit={{ x: 500 }}
+          />
+          
+            {desplegado && <motion.div
+              id="menu_options"
+              key={"menu"}
+              initial={{ y: -500 }}
+              animate={{ y: 0 }}
+              exit={{ y: -500 }}
+              transition={{
+                duration: 1,
+              }}
+            >
+              <a href="#">Primera seccion</a>
+              <a href="#">Segunda seccion</a>
+              <a href="#">Tercera seccion</a>
+              <a href="#">Cuarta seccion</a>
+              <a href="#">Quinta seccion</a>
+              <a href="#">Sexta seccion</a>
+            </motion.div>}
+          
+        </nav>
+      )}
+      {!desplegado && (
+        <nav id="menu_close">
+          <motion.img
+            id="menu_img"
+            src={Menu_img}
+            onClick={() => setDesplegado(true)}
+            initial={{ x: -500 }}
+            animate={{ x: 0 }}
+            exit={{ x: -500 }}
+          />
+        </nav>
+      )}
+      </AnimatePresence>
+    </>
+  );
 }
 
-export default Menu
+export default Menu;

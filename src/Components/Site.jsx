@@ -1,16 +1,23 @@
-import Inicio from './Inicio'
-import Menu from './Menu'
-import './Site.css'
+import { useRef } from "react";
+import Inicio from "./Inicio";
+import Menu from "./Menu";
+import "./Site.css";
+import { motion } from "framer-motion";
 
-function Site(){
-    return(
-        <div id='site'>
-            <Menu/>
-            <div id='theContent'>
-                <Inicio/>
-            </div>
-        </div>
-    )
+function Site() {
+  return (
+    <>
+      <Menu />
+      <motion.div
+        id="theContent"
+        transition={{
+          duration: 1,
+        }}
+      >
+        <Inicio />
+      </motion.div>
+    </>
+  );
 }
 
-export default Site
+export default Site;
