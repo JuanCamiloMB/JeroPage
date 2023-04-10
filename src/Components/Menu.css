@@ -3,20 +3,27 @@
 }
 
 #menu_close{
+    left: 2%;
+    /* position: absolute; */
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: end;
+    width: 5vw;
+    flex-direction: row;
+    justify-content: center;
     height: 4vh;
     margin-top: 2vh;
 }
 
 #menu_open{
+    left: 0%;
     display: flex;
+    position: fixed;
+    width: 25%;
     flex-direction: column;
-    min-height: 100vh;
-    margin-top: 2vh;
+    height: 100vh;
+    /* padding-top: 2vh; */
     align-items: center;
     z-index: 1;
+    background-color: rgb(31, 31, 31);
 }
 
 
@@ -38,6 +45,6 @@ a{
 
 
 #close_img{
-    height: 4vh;
-    width: 100%;
+    padding: 2%;
+    
 }
