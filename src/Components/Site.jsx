@@ -1,3 +1,9 @@
+import CuartaSeccion from "../Sections/CuartaSeccion";
+import PrimeraSeccion from "../Sections/PrimeraSeccion";
+import QuintaSeccion from "../Sections/QuintaSeccion";
+import SegundaSeccion from "../Sections/SegundaSeccion";
+import SextaSeccion from "../Sections/SextaSeccion";
+import TerceraSeccion from "../Sections/TerceraSeccion";
 import Inicio from "./Inicio";
 import Menu from "./Menu";
 import "./Site.css";
@@ -8,12 +14,19 @@ function Site() {
     <>
       <Menu />
       <motion.div
+        className="bg-white text-black"
         id="theContent"
         transition={{
           duration: 1,
         }}
       >
         <Inicio />
+        <PrimeraSeccion />
+        <SegundaSeccion />
+        <TerceraSeccion />
+        <CuartaSeccion />
+        <QuintaSeccion />
+        <SextaSeccion />
       </motion.div>
     </>
   );

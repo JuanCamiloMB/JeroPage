@@ -1,3 +1,5 @@
+
+
 #site{
     width: 100%;
     display: flex;
@@ -6,5 +8,6 @@
 }
 
 #theContent{
+    font-family: 'Cinzel';
     width: 95vw;
 }

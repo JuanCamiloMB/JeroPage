@@ -1,11 +1,11 @@
-import Logo from "../assets/LogoJero.svg";
+import Logo from "../assets/LogoJero_white.svg";
 import "./Inicio.css";
 
 function Inicio() {
   return (
     <div id="inicio">
-      <div id="name">Jeronimo Uribe Aranzazu</div>
-      <div id="description">Psicologo</div>
+      <div className="" id="name">Jeronimo Uribe Aranzazu</div>
+      <div className="" id="description">Psicólogo</div>
       <img src={Logo} id="logo" />
     </div>
   );

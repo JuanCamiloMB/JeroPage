@@ -1,16 +1,17 @@
 #menu_img{
-    height: 100%;
+    width: 5vh;
+    left: 2vw;
 }
 
+
+
 #menu_close{
-    left: 2%;
-    /* position: absolute; */
-    display: flex;
-    width: 5vw;
-    flex-direction: row;
-    justify-content: center;
-    height: 4vh;
+   /*  width: 5vw; */
+    flex-direction: column;
+    
+    height: 100%;
     margin-top: 2vh;
+    background-color: white;
 }
 
 #menu_open{
@@ -23,7 +24,7 @@
     /* padding-top: 2vh; */
     align-items: center;
     z-index: 1;
-    background-color: rgb(31, 31, 31);
+    /* background-color: rgb(31, 31, 31); */
 }
 
 
@@ -38,7 +39,7 @@ a{
     text-align: center;
     width: 100%;
     margin-bottom: 1px;
-    border-bottom: 1px solid rgb(50, 50, 50);
+    border-bottom: 1px solid black;
     font-family: 'Cinzel';
     font-size: 3vh;
 }
@@ -46,5 +47,9 @@ a{
 
 #close_img{
     padding: 2%;
-    
+    height: 5vh;
+}
+
+#close_img:hover{
+    cursor: pointer;
 }

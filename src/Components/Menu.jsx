@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Menu_img from "../assets/menu.svg";
+import Menu_img from "../assets/menu.png";
 import "./Menu.css";
-import Close_img from "../assets/close.svg";
+import Close_img from "../assets/close.png";
 import { motion, AnimatePresence } from "framer-motion";
 
 function Menu() {
@@ -12,13 +12,14 @@ function Menu() {
       <AnimatePresence mode="wait">
         {desplegado && (
           <motion.nav
-          id="menu_open"
-          initial={{ x: -500 }}
-          animate={{ x: 0 }}
-          exit={{x: -500}}
-          transition={{
-            ease: 'easeIn'
-          }}
+            className="text-black bg-white"
+            id="menu_open"
+            initial={{ x: -500 }}
+            animate={{ x: 0 }}
+            exit={{ x: -500 }}
+            transition={{
+              ease: "easeIn",
+            }}
           >
             <img
               src={Close_img}
@@ -37,8 +38,12 @@ function Menu() {
           </motion.nav>
         )}
         {!desplegado && (
-          <nav id="menu_close">
+          <nav
+            className="flex align-items justify-items-center"
+            id="menu_close"
+          >
             <motion.img
+              className="absolute cursor-pointer z-10"
               id="menu_img"
               src={Menu_img}
               onClick={() => setDesplegado(true)}

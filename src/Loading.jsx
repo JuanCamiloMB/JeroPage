@@ -45,8 +45,7 @@ function Loading() {
           <motion.div
             key={"2"}
             id="container"
-            className="flex items-center justify-center h-screen w-screen"
-            initial={{ opacity: 0 }}
+            className="flex items-center justify-center h-screen w-screen bg-black"
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{

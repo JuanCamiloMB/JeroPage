@@ -1,5 +1,4 @@
 #inicio{
-    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,18 +9,18 @@
 
 #logo{
     position: relative;
-    background: white;
+    /* background: white; */
 }
 
 #name{
     font-family: 'Cinzel';
-    font-size: 4vh;
+    font-size: 4rem;
     text-align: center;
 }
 
 #description{
     font-family: 'Cinzel';
-    font-size: 2.3vh;
+    font-size: 2.5rem;
     margin-top: 2vh;
     margin-bottom: 2vh;
 }
