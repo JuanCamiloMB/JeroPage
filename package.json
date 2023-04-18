@@ -1,6 +1,6 @@
 {
   "name": "jeropage",
-  "private": true,
+  "private": false,
   "homepage": "https://juancamilomb.github.io/JeroPage",
   "version": "0.0.0",
   "type": "module",

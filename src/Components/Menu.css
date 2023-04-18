@@ -53,3 +53,18 @@ a{
 #close_img:hover{
     cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+    #menu_open{
+        top: 0%;
+        display: flex;
+        position: absolute;
+        width: 100%;
+        flex-direction: column;
+        height: 100vh;
+        /* padding-top: 2vh; */
+        align-items: center;
+        z-index: 1;
+        /* background-color: rgb(31, 31, 31); */
+    }
+}

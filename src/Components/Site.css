@@ -11,3 +11,10 @@
     font-family: 'Cinzel';
     width: 95vw;
 }
+
+@media screen and (max-width: 768px) {
+    #site{
+        display: flex;
+        flex-direction: column;
+    }
+}
