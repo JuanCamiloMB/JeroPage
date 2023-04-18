@@ -1,6 +1,6 @@
 import { AnimatePresence, easeIn, motion } from "framer-motion";
 import { useState, useEffect } from "react";
-import Logo from "/LogoJeroVacio.svg";
+import Logo from "./assets/LogoJeroVacio.svg";
 import Site from "./Components/Site";
 import "./Loading.css";
 

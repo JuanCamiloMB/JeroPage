@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Menu_img from "/menu.png";
+import Menu_img from "../assets/menu.png";
 import "./Menu.css";
-import Close_img from "/close.png";
+import Close_img from "../assets/close.png";
 import { motion, AnimatePresence } from "framer-motion";
 
 function Menu() {
