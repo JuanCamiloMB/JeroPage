@@ -1,4 +1,4 @@
-import Logo from "../assets/LogoJero_white.svg";
+import Logo from "/LogoJero_white.svg";
 import "./Inicio.css";
 
 function Inicio() {
