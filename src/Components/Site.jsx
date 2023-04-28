@@ -14,7 +14,7 @@ function Site() {
     <>
       <Menu />
       <motion.div
-        className="bg-white text-black"
+        className="bg-white text-black flex flex-col gap-60"
         id="theContent"
         transition={{
           duration: 1,

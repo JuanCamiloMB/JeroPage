@@ -1,8 +1,8 @@
 function SegundaSeccion() {
   return (
-    <div className="flex flex-col justify-center text-center min-h-screen" id="segunda_seccion">
+    <div className="flex flex-col justify-center text-center h-fit" id="segunda_seccion">
       <div className="flex text-6xl w-full justify-center" id="titulo_vision">
-        Mi vision
+        Mi visión
       </div>
       <div className="text-3xl" id="vision">
         Considero al ser humano como un individuo biológico, psicológico y
