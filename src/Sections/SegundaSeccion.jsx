@@ -1,7 +1,7 @@
 function SegundaSeccion() {
   return (
-    <div className="flex flex-col justify-center min-h-screen" id="segunda_seccion">
-      <div className="flex text-6xl" id="titulo_vision">
+    <div className="flex flex-col justify-center text-center min-h-screen" id="segunda_seccion">
+      <div className="flex text-6xl w-full justify-center" id="titulo_vision">
         Mi vision
       </div>
       <div className="text-3xl" id="vision">

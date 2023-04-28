@@ -1,6 +1,6 @@
 function CuartaSeccion() {
   return (
-    <div className="flex flex-col justify-center min-h-screen" id="cuarta_seccion">
+    <div className="flex flex-col justify-center text-center min-h-screen" id="cuarta_seccion">
       <div className="text-6xl">¿Quien soy como psicologo?</div>
       <div className="text-3xl">
         La atención del ser humano biopsicosocial se realiza en base a sus
