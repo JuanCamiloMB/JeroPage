@@ -28,12 +28,12 @@ function Menu() {
             />
 
             <div id="menu_options">
-              <a href="#">Primera seccion</a>
-              <a href="#">Segunda seccion</a>
-              <a href="#">Tercera seccion</a>
-              <a href="#">Cuarta seccion</a>
-              <a href="#">Quinta seccion</a>
-              <a href="#">Sexta seccion</a>
+              <a href="#frase">Frase</a>
+              <a href="#vision">Mi visión</a>
+              <a href="#tercera_seccion">¿Quién soy como persona?</a>
+              <a href="#cuarta_seccion">¿Quién soy como psicólogo?</a>
+              <a href="#quinta_seccion">Formación</a>
+              <a href="#sexta_seccion">Contacto</a>
             </div>
           </motion.nav>
         )}

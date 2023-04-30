@@ -11,6 +11,10 @@
 
 }
 
+html{
+  scroll-behavior:smooth;
+}
+
 #root{
   /* color: white; */
   display: flex;
