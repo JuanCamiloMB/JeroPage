@@ -1,8 +1,8 @@
 function CuartaSeccion() {
   return (
     <div className="flex flex-col justify-center text-center h-fit" id="cuarta_seccion">
-      <div className="text-6xl">¿Quién soy como psicologo?</div>
-      <div className="text-3xl">
+      <div className="text-6xl mb-8">¿Quién soy como psicólogo?</div>
+      <div className="text-4xl leading-normal">
         La atención del ser humano biopsicosocial se realiza en base a sus
         pensamientos, así como sus conductas en aras de identificar fortalezas,
         junto con los elementos de mejora de este. A través de la visión del

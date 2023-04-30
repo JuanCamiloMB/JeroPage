@@ -1,8 +1,8 @@
 function TerceraSeccion() {
   return (
     <div className="flex flex-col justify-center text-center h-fit my-5" id="tercera_seccion">
-      <div className="flex text-6xl justify-center">¿Quién soy como persona?</div>
-      <div className="text-3xl">
+      <div className="flex text-6xl justify-center mb-8">¿Quién soy como persona?</div>
+      <div className="text-4xl leading-normal">
         Soy una persona curiosa por el conocimiento entorno al estudio del
         comportamiento humano con el fin de entender la globalidad en el
         bienestar de este; considero que cuando le ofrecemos a las personas
